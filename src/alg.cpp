@@ -23,7 +23,7 @@ std::string infx2pstfx(std::string inf) {
             }
         } else {
             while (!stack1.isempty() && stack1.get() != '(' &&
-                   (inf[i] =='+' || stack1.get() =='*' || stack1.get() == '/')) {
+            (inf[i] =='+' || stack1.get() =='*' || stack1.get() == '/')) {
                 pst += stack1.get();
                 pst += ' ';
                 stack1.pop();
